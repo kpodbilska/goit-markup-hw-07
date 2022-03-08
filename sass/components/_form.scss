@@ -8,205 +8,204 @@
   background-color: var(--secondary-color);
   animation: animateModal 1000ms 1000ms;
   border-radius: 4px;
-}
 
-@keyframes animateModal {
-  0% {
-    transform: translate(-50%, -50%) scale(0.75);
+  @keyframes animateModal {
+    0% {
+      transform: translate(-50%, -50%) scale(0.75);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.25);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
   }
-  50% {
-    transform: translate(-50%, -50%) scale(1.25);
+
+  &__display {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 40px;
   }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
+
+  &__title {
+    width: 448px;
+    height: 23px;
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--main-color);
   }
-}
 
-.form__display {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-left: 40px;
-}
+  &__label {
+    text-align: left;
+    margin-top: 10px;
+    padding-bottom: 4px;
+    color: var(--fourth-color);
+    font-size: 12px;
+    font-style: normal;
+  }
 
-.form__title {
-  width: 448px;
-  height: 23px;
-  margin-top: 40px;
-  font-size: 20px;
-  text-align: center;
-  color: var(--main-color);
-}
+  &__position {
+    position: relative;
+    width: 448px;
+    height: 40px;
+  }
 
-.form--space {
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding-left: 42px;
-  outline-color: var(--third-color);
-  color: var(--fourth-color);
-}
+  &__icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+    margin-top: 11px;
+    fill: var(--main-color);
+  }
 
-.form__label {
-  text-align: left;
-  margin-top: 10px;
-  padding-bottom: 4px;
-  color: var(--fourth-color);
-  font-size: 12px;
-  font-style: normal;
-}
+  &__svg {
+    size: 20px;
+    width: 20px;
+    height: 20px;
+  }
 
-.form__comment {
-  width: 448px;
-  height: 120px;
-  padding-top: 12px;
-  padding-left: 16px;
-  text-align: left;
-  vertical-align: text-top;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  color: var(--fourth-color);
-  font-size: 12px;
-  font-style: normal;
-  resize: none;
-}
+  &--space {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+    outline-color: var(--third-color);
+    color: var(--fourth-color);
+  }
 
-.form__checkbox {
-  position: relative;
-  margin-top: 20px;
-  font-size: 14px;
-  font-style: normal;
-  color: var(--fourth-color);
-}
+  &__comment {
+    width: 448px;
+    height: 120px;
+    padding-top: 12px;
+    padding-left: 16px;
+    text-align: left;
+    vertical-align: text-top;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: var(--fourth-color);
+    font-size: 12px;
+    font-style: normal;
+    resize: none;
+  }
 
-.form__box {
-  position: relative;
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--main-color);
-  border-radius: 4px;
-  appearance: none;
-}
+  &__checkbox {
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: normal;
+    color: var(--fourth-color);
+  }
 
-.form__check {
-  position: absolute;
-  width: 16px;
-  height: 15px;
-  margin-left: -19px;
-  margin-top: 1px;
-  border-radius: 4px;
-  fill: none;
-  visibility: hidden;
-}
+  &__box {
+    position: relative;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    appearance: none;
 
-.form__box:checked + .form__check {
-  fill: var(--secondary-color);
-  visibility: visible;
-}
+    &:checked {
+      border: none;
+      background-color: var(--third-color);
+    }
+  }
 
-.form__box:checked {
-  border: none;
-  background-color: var(--third-color);
-}
+  &__check {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    margin-left: -19px;
+    margin-top: 1px;
+    border-radius: 4px;
+    fill: none;
+    visibility: hidden;
+  }
 
-.form__button {
-  margin-top: 30px;
-  margin-left: 134px;
-  width: 200px;
-  height: 50px;
-  background: var(--third-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  color: var(--secondary-color);
-}
+  &__box:checked + &__check {
+    fill: var(--secondary-color);
+    visibility: visible;
+  }
 
-.form__position {
-  position: relative;
-  width: 448px;
-  height: 40px;
-}
+  &__document {
+    color: var(--third-color);
 
-.form__icon {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  margin-left: 12px;
-  margin-top: 11px;
-  fill: var(--main-color);
-}
+    &:hover,
+    &:focus {
+      color: var(--third-color);
+      fill: var(--third-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      outline-color: var(--third-color);
+    }
+  }
 
-.form__position:focus-within .form__icon {
-  fill: var(--third-color);
-}
+  &__button {
+    margin-top: 30px;
+    margin-left: 134px;
+    width: 200px;
+    height: 50px;
+    background: var(--third-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--secondary-color);
 
-.form__document {
-  color: var(--third-color);
-}
+    &:hover,
+    &:focus {
+      background: var(--third-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      color: var(--secondary-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      outline-color: var(--third-color);
+    }
+  }
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
 
-.form__button:hover,
-.form__button:focus {
-  background: var(--third-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: var(--secondary-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline-color: var(--third-color);
-}
+    &:hover,
+    &:focus {
+      color: var(--third-color);
+      fill: var(--third-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      outline-color: var(--third-color);
+    }
+  }
 
-.form__svg {
-  size: 20px;
-  width: 20px;
-  height: 20px;
-}
+  &__position:focus-within &__icon {
+    fill: var(--third-color);
+  }
 
-.form__document:hover,
-.form__document:focus {
-  color: var(--third-color);
-  fill: var(--third-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline-color: var(--third-color);
-}
-
-.form--space:hover,
-.form--space:focus,
-.form__comment:hover,
-.form__comment:focus,
-.form__box:hover,
-.form__box:focus {
-  border: 1px solid var(--third-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline-color: var(--third-color);
-  outline-width: 1px;
-}
-
-.form__close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background-color: var(--secondary-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.form__close-button:hover,
-.form__close-button:focus {
-  color: var(--third-color);
-  fill: var(--third-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline-color: var(--third-color);
+  &--space:hover,
+  &--space:focus,
+  &__comment:hover,
+  &__comment:focus,
+  &__box:hover,
+  &__box:focus {
+    border: 1px solid var(--third-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline-color: var(--third-color);
+    outline-width: 1px;
+  }
 }
