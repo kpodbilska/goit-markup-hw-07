@@ -1,0 +1,120 @@
+.link {
+  padding-top: 40px;
+  padding-left: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link__title,
+.link__newsletter-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.link__newsletter {
+  display: flex;
+  padding-left: 78px;
+}
+
+.link__newsletter-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--fourth-color);
+  color: var(--fourth-color);
+  background-color: transparent;
+  outline-style: none;
+  color: var(--secondary-color);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link__signup {
+  padding-left: 12px;
+  padding-top: 36px;
+}
+
+.link__signup-button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--third-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.link__signup-text {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+}
+
+.link__signup-send {
+  width: 24px;
+  height: 24px;
+  margin-right: 28px;
+  fill: var(--secondary-color);
+}
+
+.link__icon-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--secondary-color);
+  background-color: var(--third-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline-color: var(--third-color);
+}
+
+.link__svg,
+.link__signup-svg {
+  size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.link__icon-background:hover,
+.link__icon-background:focus {
+  background: var(--third-color);
+  fill: var(--secondary-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline-color: var(--third-color);
+}
+
+.link__icon {
+  width: 44px;
+  height: 44px;
+}
