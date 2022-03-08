@@ -1,8 +1,8 @@
 .section {
   padding-top: 0px;
   padding-bottom: 0px;
-}
 
-.section--border-bottom {
-  border-bottom: 1px solid #ececec;
+  &--border-bottom {
+    border-bottom: 1px solid #ececec;
+  }
 }

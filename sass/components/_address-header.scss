@@ -4,60 +4,55 @@
   align-items: center;
   justify-items: center;
   fill: var(--fourth-color);
-}
 
-.address-header__envelope {
-  width: 30px;
-  height: 20px;
-  padding-right: 10px;
-}
+  &__email {
+    width: 161px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: var(--fourth-color);
+  }
 
-.address-header__email:hover,
-.address-header__email:focus,
-.address-header__tel:hover,
-.address-header__tel:focus {
-  color: var(--third-color);
-  fill: var(--third-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline-color: var(--third-color);
-}
+  &__tel {
+    width: 160px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: var(--fourth-color);
+    fill: var(--fourth-color);
+  }
 
-.address-header__svg {
-  size: 20px;
-  width: 20px;
-  height: 20px;
-}
+  &__svg {
+    size: 20px;
+    width: 20px;
+    height: 20px;
+  }
 
-.address-header__email {
-  width: 161px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  font-weight: 500px;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
-  letter-spacing: 0.02em;
-  color: var(--fourth-color);
-}
+  &__envelope,
+  &__smartphone {
+    width: 30px;
+    height: 20px;
+    padding-right: 10px;
+  }
 
-.address-header__tel {
-  width: 160px;
-  margin-left: 30px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  font-weight: 500px;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
-  letter-spacing: 0.02em;
-  color: var(--fourth-color);
-  fill: var(--fourth-color);
-}
-
-.address-header__smartphone {
-  width: 30px;
-  height: 20px;
-  padding-right: 10px;
+  &__email:hover,
+  &__email:focus,
+  &__tel:hover,
+  &__tel:focus {
+    color: var(--third-color);
+    fill: var(--third-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline-color: var(--third-color);
+  }
 }
