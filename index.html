@@ -12,10 +12,10 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="corps">
     <header>
       <section class="section">
-        <div class="container header">
+        <div class="container container--header">
           <a class="weblogo weblogo--header" href="#"
             >Web<span class="weblogo__black">Studio</span></a
           >
@@ -392,8 +392,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container foot">
+    <footer class="foot">
+      <div class="container foot__position">
         <address class="address-footer">
           <a class="weblogo weblogo--footer" href="#"
             >Web<span class="weblogo__white">Studio</span></a
@@ -401,12 +401,12 @@
           <p class="address-footer__address">
             m. Warszawa, Aleje Jerozolimskie 21
           </p>
-          <p>
+          <p class="address-footer__position">
             <a class="address-footer__contact-to" href="mailto:info@example.com"
               >info@example.com</a
             >
           </p>
-          <p>
+          <p class="address-footer__position">
             <a class="address-footer__contact-to" href="tel:+48111111111"
               >+48 111 111 111</a
             >
@@ -477,9 +477,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <div class="form">
+    <div class="is-hidden" data-modal>
+      <div class="form">
+        <div class="form__display">
           <div class="form__title">Zostaw swoje dane w formularzu poniżej</div>
 
           <label for="form__name" class="form__label"
@@ -542,7 +542,9 @@
             <a href="#" class="form__document">Politykę Prywatności.</a>
           </div>
           <button type="submit" class="form__button button">Wyślij</button>
-          <button type="button" class="close-button" data-modal-close>x</button>
+          <button type="button" class="form__close-button" data-modal-close>
+            x
+          </button>
         </div>
       </div>
     </div>
